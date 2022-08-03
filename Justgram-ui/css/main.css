@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
   vertical-align: baseline;
@@ -74,21 +76,21 @@ body {
 
   
 }
-.container .logoBox {
+.logoBox {
   display: flex;
   justify-content: flex-start;
 }
-.container .logo {
+.logo {
   height: 29px;
   display: inline-block;
 }
 
-.container .explorer {
+.explorer {
   display: flex;
   justify-content: center;
 }
 
-.container .tagItem {
+.tagItem {
   display: flex;
 }
 
@@ -126,8 +128,31 @@ body {
 
 .cardTop {
   height: 56px;
+  position: relative;
 }
 
+.cardTop img {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  border: 1px solid white;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 5px;
+  
+}
+
+.cardTopUsername {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 55px;
+  font-size: 14px;
+  
+  
+}
 .cardImg img{
   width: 100%;
 }
@@ -163,6 +188,7 @@ body {
   right: 10px;
   cursor: pointer;
 }
+
 
 .cardComment {
   min-height: 220px;
@@ -208,12 +234,13 @@ body {
   border: none;
   resize: none;
   width: 10%;
+  
 }
 
 
 .listInputArea{
   position: absolute;
-  bottom: 8px;
+  bottom: 7.5px;
   left: 90px;
   width: 60%;
   height: 18px;
