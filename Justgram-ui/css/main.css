@@ -3,6 +3,11 @@
   vertical-align: baseline;
 }
 
+* input {
+  outline:none;
+}
+
+
 
 body {
   background-color: #fafafa;
@@ -196,16 +201,25 @@ body {
 
 }
 
-
-.cardCommentInput input{
+.userNameArea{
   position: absolute;
   bottom: 8px;
   left: 40px;
+  border: none;
+  resize: none;
+  width: 10%;
+}
 
-  width: 80%;
+
+.listInputArea{
+  position: absolute;
+  bottom: 8px;
+  left: 90px;
+  width: 60%;
   height: 18px;
-    border: none;
-    resize: none;
+  border: none;
+  resize: none;
+  overflow: hidden;
 }
 
 .linkBox {
