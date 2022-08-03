@@ -1,43 +1,32 @@
-const $listArea = document.querySelector("#listArea");
-const $listButton = document.querySelector("#listButton");
-const $CommentForm = document.querySelector("#CommentForm");
-const $cardCommentUl = document.querySelector(".cardCommentUl");
+const $listArea = document.querySelectorAll(".listArea");
+const $listButton = document.querySelectorAll(".listButton");
+const $CommentForm = document.querySelectorAll(".CommentForm");
+const $cardCommentUl = document.querySelectorAll(".cardCommentUl");
 
-$CommentForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const textcontents = $listArea.value;
-  const templit = `<li><span>우주호</span>${textcontents}</li>`;
-  $cardCommentUl.insertAdjacentHTML("beforeend", templit);
-  removeTextcontents();
-});
+for (let i = 0; i < $CommentForm.length; i++) {
+  $CommentForm[i].addEventListener("submit", (e) => {
+    e.preventDefault();
+    const textcontents = $listArea[i].value;
+    const templit = `<li><span>우주호</span>${textcontents}</li>`;
+    $cardCommentUl[i].insertAdjacentHTML("beforeend", templit);
+    removeTextcontents();
 
-function removeTextcontents() {
-  $listArea.value = "";
-  $listButton.disabled = true;
-  $listButton.classList.remove("active");
-}
+    
+  });
 
-$listArea.addEventListener("input", () => {
-  if ($listArea.value === "") {
-    $listButton.disabled = true;
-    $listButton.classList.remove("active");
-  } else {
-    $listButton.disabled = false;
-    $listButton.classList.add("active");
+  function removeTextcontents() {
+    $listArea[i].value = "";
+    $listButton[i].disabled = true;
+    $listButton[i].classList.remove("active");
   }
-});
 
-// const $like = document.querySelector(".like");
-// let heartSwitch = 0;
-// $like.addEventListener("click", (e) => {
-//   if (heartSwitch === 0) {
-//     e.firstChild.src = "img/afterheart.png";
-//     heartSwitch = 1;
-//     console.log(heartSwitch);
-//   } else if (heartSwitch === 1) {
-//     e.firstChild.src = "img/beforeheart.png";
-//     heartSwitch = 0;
-//   }
-// });
-// 이렇게 만들면 확장성이 좋지 않다
-// 어떤 방법이 좋을까
+  $listArea[i].addEventListener("input", () => {
+    if ($listArea[i].value === "") {
+      $listButton[i].disabled = true;
+      $listButton[i].classList.remove("active");
+    } else {
+      $listButton[i].disabled = false;
+      $listButton[i].classList.add("active");
+    }
+  });
+}
