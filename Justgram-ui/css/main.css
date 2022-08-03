@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+}
+
+.header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid rgb(219, 219, 219);
+
+  
+}
+.inputBox {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  justify-items: center;
+  
+  
+  
+}
+
+.inputBoxContainer img {
+  position: absolute;
+  top: 10px;
+  right: 240px;
+  
+}
+
+.inputBoxContainer > input {
+  background-color: #efefef;
+  border-radius: 3px;
+  border: 1px solid #efefef;
+  width: 268px;
+  padding: 0 16px 0 36px;
+  text-align: left;
+  height: 36px;
+
+  
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 975px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  
+}
+.container .logoBox {
+  display: flex;
+  justify-content: flex-start;
+}
+.container .logo {
+  height: 29px;
+  display: inline-block;
+}
+
+.container .explorer {
+  display: flex;
+  justify-content: center;
+}
+
+.container .tagItem {
+  display: flex;
+}
+
+.peed {
+  
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transform: translateY(-56px);
+  width: 470px;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.selector {
+  background-color: #ffffff;
+  width: 100%;
+  height: 119px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  margin-top: 80px;
+}
+
+.card {
+  background-color: #ffffff;
+  position: relative;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cardTop {
+  height: 56px;
+}
+
+.cardImg img{
+  width: 100%;
+}
+
+.cardLink {
+  height: 47px;
+}
+
+.cardLink a{
+  padding: 8px;
+}
+.cardCommentList {
+  height: 100px;
+}
+
+.cardCommentList ul {
+  margin: 0;
+  padding: 0 12px;
+}
+.cardCommentList li {
+ list-style: none;
+ font-size: 14px; 
+ margin-bottom: 5px;
+ display: flex;
+}
+.cardCommentList li > span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.like {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.cardComment {
+  min-height: 220px;
+}
+
+.cardCommentInput {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.cardCommentInput a img {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.active {
+  color: #1ea1f7 !important;
+  font-weight: bold !important;
+  /* 우선순위 설정 */
+  cursor: pointer;
+}
+
+.cardCommentInput button {
+  display: inline;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  color: #c5e7fd;
+  font-weight: 400;
+  border: 0;
+  outline: 0;
+  background-color:transparent;
+  /* 버튼이 글자처럼 보일 수 있도록 */
+
+}
+
+
+.cardCommentInput input{
+  position: absolute;
+  bottom: 8px;
+  left: 40px;
+
+  width: 80%;
+  height: 18px;
+    border: none;
+    resize: none;
+}
+
+.linkBox {
+  width: 278px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.linkBox img {
+  margin-left: 15px;
+}

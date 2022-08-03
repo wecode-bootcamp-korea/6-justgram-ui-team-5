@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/c151186362.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logoBox">
+          <a href=""><img src="img/instalogo.png" class="logo" /></a>
+        </div>
+        <div class="inputBox" style="flex-grow: 1">
+          <div class="inputBoxContainer">
+            <a href=""><img src="/img/focus.png" width="16px" /></a>
+            <input type="text" placeholder="검색" />
+          </div>
+        </div>
+        <div class="linkBox">
+          <a href=""><img src="img/nav.png" style="height: 29px" /></a>
+          <a href=""><img src="img/heart.png" style="height: 29px" /></a>
+          <a href=""><img src="img/my.png" style="height: 29px" /></a>
+        </div>
+      </div>
+    </header>
+    <section class="peed">
+      <div class="selector"></div>
+      
+
+      <div class="card-element">
+        <div class="card">
+          <div class="cardTop"></div>
+          <div class="cardImg">
+            <img src="img/1.avif" />
+          </div>
+          <div class="cardLink">
+            <a href=""><img src="img/nav.png" style="height: 24px" /></a>
+            <a href=""><img src="img/heart.png" style="height: 24px" /></a>
+            <a href=""><img src="img/my.png" style="height: 24px" /></a>
+          </div>
+          <div class="cardComment">
+            <div class="cardCommentList">
+              <!-- <span class="like"><img src="img/beforeheart.png" style="width: 16px;"></span> -->
+              <ul class="cardCommentUl">
+                <!-- <li><span>우주호</span>와 너무 예뻐요</li> -->
+
+              </ul>
+
+            </div>
+            
+          </div>
+          <div class="cardCommentInputBox">
+            <form class="cardCommentInput" id="CommentForm">
+              <a href=""><img style="height: 24px" src="/img/smile.png" /></a>
+              <input id="listArea" placeholder="댓글 달기..."></input>
+              <button id="listButton" type="submit" disabled>게시</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/list.js"></script>
+  </body>
+</html>
