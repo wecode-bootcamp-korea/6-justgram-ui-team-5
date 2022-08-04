@@ -1,15 +1,11 @@
-
-
 * {
   box-sizing: border-box;
   vertical-align: baseline;
 }
 
 * input {
-  outline:none;
+  outline: none;
 }
-
-
 
 body {
   background-color: #fafafa;
@@ -19,38 +15,29 @@ body {
 .header {
   z-index: 10;
   position: sticky;
+  display: flex;
+  justify-content: space-around;
   top: 0;
   left: 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
   height: 60px;
   background: #ffffff;
   border: 1px solid rgb(219, 219, 219);
-
-  
 }
+
 .inputBox {
   display: flex;
   justify-content: flex-end;
   position: relative;
   justify-items: center;
-  
-  
-  
 }
 
 .inputBoxContainer img {
   position: absolute;
   top: 10px;
   right: 240px;
-  
 }
 
 .inputBoxContainer > input {
@@ -61,8 +48,6 @@ body {
   padding: 0 16px 0 36px;
   text-align: left;
   height: 36px;
-
-  
 }
 
 .container {
@@ -73,16 +58,16 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-
-  
 }
+
 .logoBox {
   display: flex;
   justify-content: flex-start;
 }
+
 .logo {
   height: 29px;
-  display: inline-block;
+  display: flex;
 }
 
 .explorer {
@@ -95,7 +80,6 @@ body {
 }
 
 .peed {
-  
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -136,12 +120,11 @@ body {
   height: 36px;
   border-radius: 100%;
   border: 1px solid white;
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   left: 5px;
-  
 }
 
 .cardTopUsername {
@@ -150,10 +133,8 @@ body {
   transform: translate(0, -50%);
   left: 55px;
   font-size: 14px;
-  
-  
 }
-.cardImg img{
+.cardImg img {
   width: 100%;
 }
 
@@ -161,7 +142,7 @@ body {
   height: 47px;
 }
 
-.cardLink a{
+.cardLink a {
   padding: 8px;
 }
 .cardCommentList {
@@ -173,10 +154,10 @@ body {
   padding: 0 12px;
 }
 .cardCommentList li {
- list-style: none;
- font-size: 14px; 
- margin-bottom: 5px;
- display: flex;
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: flex;
 }
 .cardCommentList li > span {
   font-weight: bold;
@@ -188,7 +169,6 @@ body {
   right: 10px;
   cursor: pointer;
 }
-
 
 .cardComment {
   min-height: 220px;
@@ -214,7 +194,6 @@ body {
 }
 
 .cardCommentInput button {
-  display: inline;
   position: absolute;
   bottom: 8px;
   right: 5px;
@@ -222,23 +201,21 @@ body {
   font-weight: 400;
   border: 0;
   outline: 0;
-  background-color:transparent;
+  background-color: transparent;
   /* 버튼이 글자처럼 보일 수 있도록 */
-
 }
 
-.userNameArea{
+.userNameArea {
   position: absolute;
   bottom: 8px;
   left: 40px;
+  width: 10%;
   border: none;
   resize: none;
-  width: 10%;
   
 }
 
-
-.listInputArea{
+.listInputArea {
   position: absolute;
   bottom: 7.5px;
   left: 90px;
@@ -250,9 +227,9 @@ body {
 }
 
 .linkBox {
-  width: 278px;
   display: flex;
   justify-content: flex-end;
+  width: 278px;
 }
 
 .linkBox img {
