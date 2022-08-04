@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin: 200px auto;
+  max-width: 350px;
+  height: 400px;
+  box-sizing: border-box;
+  border: 2px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo {
+  margin: 10px auto;
+  font-size: 40px;
+  font-family: "Lobster", cursive;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+}
+
+section > div > input {
+  width: 250px;
+  height: 30px;
+  align-items: center;
+  font-weight: 550;
+  background-color: #fafafa;
+  border: none;
+  margin: 5px;
+}
+
+section > div {
+  margin-bottom: 3px;
+  background-color: #fafafa;
+}
+
+section > p > button {
+  width: 265px;
+  height: 35px;
+  margin-top: 12px;
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: #c4e1fb;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+section > p > button:hover {
+  cursor: not-allowed;
+}
+.loginbox {
+  width: 260px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+footer {
+  font-weight: 60000;
+  color: black;
+  margin-bottom: 30px;
+  position: relative;
+  top: 30px;
+}
+
+.facebookLogin {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0c3e70;
+  text-decoration: none;
+}
+
+.instaFindPass {
+  font-size: 12px;
+  color: #0c3e70;
+  text-decoration: none;
+}
+
+.HRline {
+  width: 250px;
+}

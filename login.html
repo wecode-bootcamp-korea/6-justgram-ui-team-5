@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JUSTGRAM</title>
+    <!-- 아이콘 -->
+    <link
+      href="img/instagram-title.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <p>JustGram</p>
+      </div>
+
+      <section>
+        <div class="loginbox">
+          <input
+            id="id_box"
+            type="text"
+            placeholder="  전화번호,사용자 이름 또는 이메일"
+          />
+        </div>
+        <div class="loginbox">
+          <input id="pw_box" type="password" placeholder="  비밀번호" />
+        </div>
+        <p>
+          <button disabled onclick="location.href='login.html'" id="loginbtn">
+            로그인
+          </button>
+        </p>
+      </section>
+      <hr class="HRline" />
+
+      <div>
+        <img src="img/ico/facebook.ico" />
+        <a class="facebookLogin" href="https://www.facebook.com/"
+          >Facebook으로 로그인</a
+        >
+      </div>
+      <footer>
+        <a
+          class="instaFindPass"
+          href="https://www.instagram.com/accounts/password/reset/"
+          >비밀번호를 잊으셨나요?</a
+        >
+      </footer>
+    </div>
+  </body>
+  <!-- JS -->
+  <script src="js/login.js"></script>
+</html>
