@@ -13,7 +13,7 @@ header {
   margin-top: 15px;
 }
 
-.l-meun {
+.left-meun {
   width: 233px;
   text-align: left;
 }
@@ -33,7 +33,7 @@ header {
   margin-top: 9px;
 }
 
-.c-menu {
+.center-menu {
   position: relative;
   width: 270px;
   height: 85px;

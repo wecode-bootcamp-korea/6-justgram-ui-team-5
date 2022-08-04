@@ -20,12 +20,10 @@ function buttonEvent() {
     inputPw.value === ""
   ) {
     // 값이 없을 경우
-    console.log("value null");
     loginButton.setAttribute("disabled", true);
     loginButton.style.backgroundColor = "rgb(190, 220, 248)";
   } else {
     //id/pw가 값이 있을 경우
-    console.log("value not null");
     loginButton.removeAttribute("disabled");
     loginButton.style.backgroundColor = "lightskyBlue";
   }
