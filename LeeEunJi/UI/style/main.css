@@ -157,7 +157,7 @@ header {
   padding-left: 10px;
 }
 
-#comment {
+.comment {
   width: 821px;
   height: 60px;
   border: 1px solid rgb(216, 216, 216);
@@ -173,7 +173,7 @@ header {
   padding: 0px;
 }
 
-#comment-button {
+.comment-button {
   position: absolute;
   top: 20px;
   right: 18px;
