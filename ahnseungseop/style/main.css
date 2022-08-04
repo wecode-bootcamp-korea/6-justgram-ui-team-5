@@ -1,0 +1,163 @@
+/*
+ * position
+ * box model
+ * visual
+ * typography
+ * misc
+ */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 100px;
+  background-color: #ffffff;
+}
+
+.header > .logo > .logo-separator {
+  margin: 5px;
+  font-size: 24px;
+}
+
+.header > .logo > .logo-text {
+  font-size: 24px;
+}
+
+.header__search > div {
+  width: 300px;
+}
+
+.header__search > div > input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  background-color: #fafafa;
+  text-align: center;
+  font-size: 15px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  height: 100vh;
+  margin-top: 80px;
+}
+
+.feed__list {
+}
+
+.feed {
+  border: 1px solid #dbdbdb;
+}
+
+.feed__background-color {
+  background-color: #ffffff;
+}
+
+.feed__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  padding: 10px;
+}
+
+.feed__profile {
+  font-size: 14px;
+}
+
+.feed__profile > img {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #dbdbdb;
+  border-radius: 70%;
+  margin-right: 10px;
+}
+
+.feed__control {
+}
+
+.feed__image {
+  height: 500px;
+  border: 1px solid #dbdbdb;
+}
+
+.feed__image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.feed__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.feed__menu > div:first-child > img {
+  margin-right: 5px;
+}
+
+.feed__content {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.feed__content > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feed__content--likes > img {
+  width: 20px;
+  height: 20px;
+  border-radius: 70%;
+  margin-right: 5px;
+}
+
+.feed__comment {
+  padding: 0px 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.feed__register-time {
+  padding: 0px 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.feed__register-time > div {
+  padding: 5px 0px;
+  color: #a2a2a2;
+}
+
+.feed__comment--input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  padding: 10px 10px;
+}
+
+.feed__comment--input > input {
+  width: 100%;
+  border: none;
+  padding: 5px;
+}
+
+.feed__comment--input > input:focus {
+  outline: none;
+}
+
+.feed__comment--input > button {
+  border: none;
+  white-space: nowrap;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #0695f6;
+}
