@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/login.css">
+  
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sunflower&display=swap');
+</style>
+
+  <title>login_page</title>
+</head>
+<body>
+  <div id="wrap">
+    <div id="main">
+      <div class="logo">
+        <span class="logoText">Justgram</span>
+      </div>
+
+      <div>
+        <form class="loginForm">
+          <div class="inputBlock">
+            <span class="inputText">전화번호, 사용자 이름 또는 이메일</span>
+            <input type="text" class="loginInput inputId"> 
+          </div>
+          
+          <div class="inputBlock">
+            <span class="inputText">비밀번호</span>
+            <input type="password" class="loginInput inputPw">
+          </div>
+          
+          <div class="inputButton">
+            <button class="loginButton" disabled="true" type="submit">로그인</button>
+          </div>
+
+          <div>
+            <div class="line">
+              또는
+            </div>
+          </div>
+          
+          <div>
+            <button class="facebookLogin">
+              <img src="/img/3721668-facebook-flat_108056.png" class="facebookIcon">
+              <span>Facebook으로 로그인</span>
+            </button>
+          </div>
+          <a href="#" class="findPw">비밀번호를 잊으셨나요?</a>
+        </form>
+      </div>
+    </div>
+
+    <div id="join">
+      <div class="account">
+        <span >계정이 없으신가요? <a href="#">가입하기</a></span>
+      </div>
+    </div>
+
+    <div id="download">
+    </div>
+  </div>
+
+  <script src="/js/login.js"></script>
+</body>
+</html>
