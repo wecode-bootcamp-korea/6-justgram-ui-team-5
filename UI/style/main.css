@@ -72,11 +72,10 @@ header {
 /* main의 feed UI*/
 .main-feed {
   border: solid 1px rgb(216, 216, 216);
-  border-radius: 5px;
+  border-radius: 1px;
   display: inline-block;
-  margin-left: 275px;
+  margin-left: 580px;
   width: 833px;
-  height: 949px;
   margin-top: 30px;
 }
 
@@ -152,12 +151,39 @@ header {
   padding-bottom: 10px;
 }
 
-.comment {
-  width: 820px;
+.feed-time {
+  font-size: 15px;
+  color: rgb(197, 197, 197);
+  padding-left: 10px;
+}
+
+#comment {
+  width: 821px;
   height: 60px;
   border: 1px solid rgb(216, 216, 216);
   border-radius: 1px;
   outline: none;
-  font-size: 20px;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-left: -1px;
+}
+
+.comment-box {
+  position: relative;
+  padding: 0px;
+}
+
+#comment-button {
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  color: skyblue;
+  cursor: pointer;
+}
+
+.comment-text {
   padding-left: 10px;
 }
