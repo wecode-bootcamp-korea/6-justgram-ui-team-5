@@ -2,75 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>justgram-main</title>
+
+    <title>Justgram - Main Page</title>
+
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/main.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
-    <header class="mainHeader">
-      <div class="columnCenter" id="headerDiv">
-        <div id="headerDivLogo">justgram</div>
-        <div class="columnCenter" id="headerDivMenu">
-          <div class="menuIcon" id="menuHome"></div>
-          <div class="menuIcon" id="menuDM"></div>
-          <div class="menuIcon" id="menuSearch"></div>
-          <div class="menuIcon" id="menuHeart"></div>
-          <div class="menuIcon" id="menuMy"></div>
-        </div>
+    <header class="to-do header-wrapper spread-row">
+      <div class="vertical-center">
+        <img
+          class="icon-image"
+          src="./image/Instagram.png"
+          alt="instagram-logo-image"
+        />
+        <span class="header-text">| Justgram</span>
+      </div>
+      <div class="vertical-center">
+        <input placeholder="검색" />
+      </div>
+      <div>
+        <img class="icon-image" src="./image/home.png" alt="main-icon" />
+        <img
+          class="icon-image margin-left-10px"
+          src="./image/dm.png"
+          alt="dm-icon"
+        />
+        <img
+          class="icon-image margin-left-10px"
+          src="./image/plus.png"
+          alt="add-icon"
+        />
+        <img
+          class="icon-image margin-left-10px"
+          src="./image/compass.png"
+          alt="search-icon"
+        />
+        <img
+          class="icon-image margin-left-10px"
+          src="./image/heart.png"
+          alt="heart-icon"
+        />
       </div>
     </header>
-    <div class="rowCenter" id="MainContents">
-      <div id="feedDiv">
-        <div class="columnCenter" id="profileDiv">
-          <div id="profileCircle"></div>
-          <span id="userName">h_goo_</span>
-          <span id="placeName">전포동</span>
-          <a id="profileMenu"></a>
-        </div>
-        <div id="feedImage"></div>
-        <div class="columnCenter" id="menuDiv">
-          <div class="menuIcon2" id="menuHeart"></div>
-          <div class="menuIcon2" id="menuCommnet"></div>
-          <div class="menuIcon2" id="menuDM"></div>
-          <div class="menuIcon2" id="menuSave"></div>
-        </div>
-        <div class="columnCenter" id="likeDiv">
-          <span class="likeProfileCircle"></span>
-          <span class="fontSetting"
-            ><b>olle_yongdam</b>님 <b>외 50명</b>이 좋아합니다</span
-          >
-        </div>
-        <div class="columnCenter" id="feedMainTextDiv">
-          <span class="fontSetting"><b>h_goo_</b></span>
-          <span class="fontSetting">고양이</span>
-          <span class="fontSetting" style="color: gray">...더보기</span>
-        </div>
-        <div id="commentDiv">
-          <div id="commentPlus">
-            <span class="fontSetting" style="color: gray"
-              >댓글 40개 모두 보기</span
-            >
+    <div class="flex-center">
+      <div class="to-do contents-wrapper">
+        <div class="to-do feed-container">
+          <div class="to-do feed-header vertical-center padding-10px">
+            <div><img alt="프로필 이미지" /> 아이디</div>
+            <div>...</div>
           </div>
-          <div id="comment1">
-            <span class="fontSetting"><b>h_goo_</b></span>
-            <span class="fontSetting" style="color: rgb(86, 86, 160)"
-              >@kes5004</span
-            >
-            <span class="fontSetting">애용</span>
+          <div class="to-do feed-image-wrapper">
+            <img class="feed-image" src="./image/cat.jpg" />
+          </div>
+          <div class="to-do feed-menu spread-row padding-10px">
+            <div>왼쪽 아이콘</div>
+            <div>오른쪽 아이콘</div>
+          </div>
+          <div class="to-do feed-comment">
+            <div class="feed-comment-like padding-10px">
+              user1 님 외 10명이 좋아합니다
+            </div>
+            <div class="feed-comment-list padding-10px">
+              <div>user2 본문 내용</div>
+              <div>댓글 1</div>
+            </div>
+            <div class="feed-comment-time padding-10px">9시간 전</div>
+            <div class="feed-comment-write padding-10px">
+              <input class="comment-write-input" placeholder="댓글 달기" />
+              <button class="comment-write-button">게시</button>
+            </div>
           </div>
         </div>
-        <div class="columnCenter" id="timeDiv">
-          <span class="fontSetting" style="color: gray; font-size: 15px"
-            >9시간 전</span
-          >
+        <div class="to-do feed-container">
+          <div class="to-do feed-header vertical-center padding-10px">
+            <div><img alt="프로필 이미지" /> 아이디</div>
+            <div>...</div>
+          </div>
+          <div class="to-do feed-image-wrapper">
+            <img class="feed-image" src="./image/cat.jpg" />
+          </div>
+          <div class="to-do feed-menu spread-row padding-10px">
+            <div>왼쪽 아이콘</div>
+            <div>오른쪽 아이콘</div>
+          </div>
+          <div class="to-do feed-comment">
+            <div class="feed-comment-like padding-10px">
+              user1 님 외 10명이 좋아합니다
+            </div>
+            <div class="feed-comment-list padding-10px">
+              <div>user2 본문 내용</div>
+              <div>댓글 1</div>
+            </div>
+            <div class="feed-comment-time padding-10px">9시간 전</div>
+            <div class="feed-comment-write padding-10px">
+              <input class="comment-write-input" placeholder="댓글 달기" />
+              <button class="comment-write-button">게시</button>
+            </div>
+          </div>
         </div>
-        <div class="columnCenter" id="writeComment"></div>
+        <div class="to-do feed-container">
+          <div class="to-do feed-header vertical-center padding-10px">
+            <div><img alt="프로필 이미지" /> 아이디</div>
+            <div>...</div>
+          </div>
+          <div class="to-do feed-image-wrapper">
+            <img class="feed-image" src="./image/cat.jpg" />
+          </div>
+          <div class="to-do feed-menu spread-row padding-10px">
+            <div>왼쪽 아이콘</div>
+            <div>오른쪽 아이콘</div>
+          </div>
+          <div class="to-do feed-comment">
+            <div class="feed-comment-like padding-10px">
+              user1 님 외 10명이 좋아합니다
+            </div>
+            <div class="feed-comment-list padding-10px">
+              <div>user2 본문 내용</div>
+              <div>댓글 1</div>
+            </div>
+            <div class="feed-comment-time padding-10px">9시간 전</div>
+            <div class="feed-comment-write padding-10px">
+              <input class="comment-write-input" placeholder="댓글 달기" />
+              <button class="comment-write-button">게시</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
+  <script src="./js/main.js"></script>
 </html>

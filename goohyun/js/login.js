@@ -1,9 +1,10 @@
-const idElmt = document.getElementById("id");
-const pwElmt = document.getElementById("password");
-const loginButton = document.getElementById("loginButton");
+const loginForm = document.getElementById("login-form");
+const inputID = document.getElementById("id-input");
+const inputPW = document.getElementById("pw-input");
+const loginButton = document.getElementById("login-btn");
 
 function pushValue() {
-  switch (!(idElmt.value && pwElmt.value)) {
+  switch (!(inputID.value && inputPW.value)) {
     case false:
       loginButton.disabled = false;
       loginButton.style.backgroundColor = "rgb(29, 142, 255)";
@@ -15,5 +16,9 @@ function pushValue() {
   }
 }
 
-idElmt.addEventListener("keyup", pushValue);
-pwElmt.addEventListener("keyup", pushValue);
+inputID.addEventListener("keyup", pushValue);
+inputPW.addEventListener("keyup", pushValue);
+
+loginForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+});
