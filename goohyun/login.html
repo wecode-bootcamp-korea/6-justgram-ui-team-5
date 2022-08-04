@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>justgram-login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/login.css" />
+  </head>
+  <body class="flexCenter">
+    <div class="rowCenter" id="loginDiv">
+      <div id="logo">justgram</div>
+      <div class="rowCenter" id="inputDiv">
+        <input
+          id="id"
+          type="text"
+          placeholder="전화번호, 사용자 이름 또는 이메일"
+        />
+        <input id="password" type="password" placeholder="비밀번호" />
+        <button type="button" id="loginButton" disabled>로그인</button>
+      </div>
+      <div class="flexCenter" id="foundPW">
+        <a href="">비밀번호를 잊으셨나요?</a>
+      </div>
+    </div>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

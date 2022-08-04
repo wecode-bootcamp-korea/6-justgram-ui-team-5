@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 10%;
+}
+.columnCenter {
+  display: flex;
+  align-items: center;
+}
+.rowCenter {
+  display: flex;
+  justify-content: center;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginDiv {
+  position: relative;
+  height: 450px;
+  width: 350px;
+
+  border: 1px solid rgb(190, 190, 190);
+}
+
+#logo {
+  position: absolute;
+  font-family: "Lobster", cursive;
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#inputDiv {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  margin-top: 105px;
+}
+
+input {
+  position: absolute;
+  height: 40px;
+  width: 75%;
+  font-size: 14px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+#password {
+  margin-top: 65px;
+}
+
+#loginButton {
+  position: absolute;
+  height: 40px;
+  width: 75%;
+  font-size: 14px;
+  color: white;
+  margin-top: 125px;
+
+  border-radius: 5px;
+  background-color: rgb(133, 182, 231);
+  border: 0px;
+}
+
+#foundPW {
+  position: absolute;
+  height: 105px;
+  width: 100%;
+  font-size: 14px;
+  color: rgba(67, 67, 166, 0.476);
+  bottom: 0px;
+}

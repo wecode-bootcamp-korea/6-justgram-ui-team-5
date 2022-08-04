@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.columnCenter {
+  display: flex;
+  align-items: center;
+}
+.rowCenter {
+  display: flex;
+  justify-content: center;
+}
+
+/* header */
+.mainHeader {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid rgb(189, 189, 189);
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+#headerDiv {
+  height: 100%;
+  padding: 5px;
+}
+#headerDivLogo {
+  font-family: "Lobster", cursive;
+  font-size: 35px;
+  margin-left: 30px;
+}
+#headerDivMenu {
+  height: 100%;
+  width: 370px;
+  margin-left: auto;
+}
+.menuIcon {
+  height: 34px;
+  width: 34px;
+
+  margin-left: 34px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.menuIcon2 {
+  height: 34px;
+  width: 34px;
+
+  margin-left: 24px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#menuHome {
+  background-image: url("../image/home.png");
+}
+#menuDM {
+  background-image: url("../image/dm.png");
+}
+#menuSearch {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
+}
+#menuHeart {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
+}
+#menuMy {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png");
+}
+#menuCommnet {
+  background-image: url("../image/comment.png");
+  background-size: 90%;
+}
+#menuSave {
+  background-image: url("../image/bookmark1.png");
+  background-size: 90%;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+/* feed */
+#MainContents {
+  height: 200vh;
+  width: 100%;
+  background-color: rgb(244, 243, 243);
+  margin-top: 80px;
+}
+#feedDiv {
+  height: 1300px;
+  width: 700px;
+
+  border: 0.5px solid rgb(189, 189, 189);
+  border-radius: 15px;
+  background-color: white;
+  margin-top: 40px;
+}
+#profileDiv {
+  height: 80px;
+  width: 100%;
+  border-bottom: 0.5px solid rgb(189, 189, 189);
+}
+#profileCircle {
+  height: 40px;
+  width: 40px;
+
+  border: 0.5px solid rgb(189, 189, 189);
+  border-radius: 40px;
+
+  background-image: url("../image/earth.jpg");
+  background-size: 150%;
+  background-position: -8px -8px;
+  margin-left: 20px;
+}
+#userName {
+  font-size: 22px;
+  font-weight: bold;
+
+  margin-top: -25px;
+  margin-left: 25px;
+}
+#placeName {
+  font-size: 18px;
+
+  margin-top: 30px;
+  margin-left: -65px;
+}
+#profileMenu {
+  height: 20px;
+  width: 25px;
+
+  background-image: url(../image/menu.png);
+  background-size: cover;
+  background-position: 0px -5px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+#feedImage {
+  height: 900px;
+  width: 100%;
+  background-image: url("../image/cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -140px 0px;
+}
+#menuDiv {
+  height: 60px;
+  width: 100%;
+}
+#likeDiv {
+  height: 50px;
+  width: 100%;
+}
+.likeProfileCircle {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background-image: url("../image/earth.jpg");
+  background-size: 150%;
+  background-position: -7px -7px;
+  margin-left: 20px;
+}
+.fontSetting {
+  font-size: 20px;
+  margin-left: 20px;
+}
+#feedMainTextDiv {
+  height: 40px;
+  width: 100%;
+}
+#commentDiv {
+  height: 50px;
+  width: 100%;
+}
+#commentPlus {
+  height: 30px;
+  width: 100%;
+  margin-top: 5px;
+}
+#comment1 {
+  height: 20px;
+  width: 100%;
+}
+#timeDiv {
+  height: 43px;
+  width: 100%;
+}
+#writeComment {
+  height: 70px;
+  width: 100%;
+  background-color: aqua;
+}
