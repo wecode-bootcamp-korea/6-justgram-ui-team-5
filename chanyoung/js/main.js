@@ -1,40 +1,47 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const [...commentsInput] = document.getElementsByClassName("commentsInput");
-  const [...commentsBtn] = document.getElementsByClassName("commentsBtn");
-  const [...commentsWrapper] = document.getElementsByClassName("commentsWrapper");
-  const commentText = document.getElementsByClassName("commentText");
+const [...commentsForm] = document.getElementsByClassName("commentsForm");  //[0:input 1:button]
+const [...commentsWrapper] = document.getElementsByClassName("commentsWrapper");
+const USERID = "poylib"
 
-  // 피드별로 각각 댓글을 유지된 상태로 사용할 수 있게 함
-  let commentsArr = Array.from({ length: commentsInput.length }, () => []);
-  commentsBtn.forEach((el, i) => {
-    el.addEventListener("click", (e) => {
-      e.preventDefault();
-      commentsArr[i].push(`<a href="javascript:void(0)">poylib</a> <span>${commentsInput[i].value}</span>`); 
-      commentText[i].innerHTML = commentsArr[i].join('<br>');
-      commentsWrapper[i].appendChild(commentText[i]);
-      commentsInput[i].value = "";
-    })
-  })
-  // 버튼은 비활성화 상태이며, 댓글입력창에 입력이 있어야 버튼이 활성화됨
-  commentsInput.forEach((el, i) => {
-    el.addEventListener("keyup", () => {
-      commentsInput[i].addEventListener("keyup", () => {
-      if (commentsInput[i].value) {
-        commentsBtn[i].removeAttribute("disabled")
-        commentsBtn[i].style.color = "#0096f6";
-      } else {
-        commentsBtn[i].setAttribute("disabled", "true")
-        commentsBtn[i].style.color = "#9fcdea";
-        }
-      })
-    })
-  })
-});
+const getComment = (e) => {
+  let formText = e.target.value;
+  let formBtn = e.target.form[1];
+  if (formText) {
+    formBtn.disabled = false;
+    formBtn.style.color = "#0096f6";
+  } else {
+    formBtn.disabled = true;
+    formBtn.style.color = "#9fcdea";
+  }
+}
 
+const postComment = (e) => {
+  let index = commentsForm.indexOf(e.target.form);
+  e.preventDefault();
+  e.target.form[1].style.color = "#9fcdea";
+  writeComment(e.target.form[0].value,USERID,index);
+  e.target.form[0].value = "";  // input 창
+  console.log(e.target.value)
+}
 
+const writeComment = (comment, ID, index) => {
+  const newCommentList = document.createElement("li");
+  const newComment = document.createElement("span");
+  const newCommentID = document.createElement("a");
+  //ID
+  newCommentID.href = "javascript:void(0)";
+  newCommentID.style.marginRight = "6px"
+  newCommentID.textContent = ID;
+  //comment
+  newComment.textContent = comment;
+  commentsWrapper[index]
+    .insertAdjacentElement('afterbegin', newCommentList)
+    .insertAdjacentElement('afterbegin', newCommentID)
+    .insertAdjacentElement('afterend', newComment)
 
-// function moreText(e) {
-//   e.preventDefault();
-//   contentsBtn.remove();
-//   contentsText.style.whiteSpace = "inherit";
-// }
+}
+
+commentsForm.forEach((form, i) => {
+  
+  form.addEventListener("input",getComment);
+  form[1].addEventListener("click",postComment);
+})

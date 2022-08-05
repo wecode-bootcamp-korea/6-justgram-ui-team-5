@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Sunflower', sans-serif;
+  background-color: rgb(253, 250, 250);
+}
+
+.toBold {
+  font-weight: bold;
+}
+
+.toButtonSet {
+  background-color: transparent;
+  border: none;
+}
+
+.toInputSet {
+  outline: none;
+  border: none;
+  border-radius: 7px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
