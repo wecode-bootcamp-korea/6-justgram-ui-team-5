@@ -51,6 +51,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 /* ////////feed////// */
@@ -62,6 +63,7 @@
   flex-direction: column;
   max-width: 500px;
   height: fit-content;
+  margin-bottom: 15px;
 }
 
 /* //////////////feedHeader////////////// */
@@ -126,6 +128,10 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.commentsWrapper li a {
+  margin-right: 5px;
 }
 
 .contentsBtn {

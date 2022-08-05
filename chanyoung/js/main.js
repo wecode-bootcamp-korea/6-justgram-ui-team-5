@@ -1,6 +1,29 @@
-const [...commentsForm] = document.getElementsByClassName("commentsForm");  //[0:input 1:button]
-const [...commentsWrapper] = document.getElementsByClassName("commentsWrapper");
-const USERID = "poylib"
+const $ = (v) => document.getElementsByClassName(v);
+const commentsForm = [...$("commentsForm")];  //[0:input 1:button]
+const commentsWrapper = [...$("commentsWrapper")];
+const loadCommentsID = [...$("loadCommentsID")];
+const loadComments = [...$("loadComments")];
+const feedPicture = [...$("feedPicture")];
+const feedWriter = [...$("feedWriter")];
+const feedWriterProfile = [...$("feedWriterProfile")];
+const likeCount = [...$("likeCount")];
+const USERID = "댓글작성자"
+
+
+let feeds;
+fetch("data/feed.json")
+  .then((res) => res.json())
+  .then((obj) => {
+    feeds = obj.feeds;
+    feeds.forEach((data,i) => {
+      loadCommentsID[i].textContent = data.USER_ID;
+      loadComments[i].textContent = data.comment;
+      feedPicture[i].src = data.feedPicture;
+      feedWriterProfile[i].src = data.WriterProfile;
+      feedWriter[i].textContent = data.USER_ID;
+      likeCount[i].textContent = `좋아요 ${data.like} 개`;
+    })
+  })
 
 const getComment = (e) => {
   let formText = e.target.value;
@@ -20,7 +43,6 @@ const postComment = (e) => {
   e.target.form[1].style.color = "#9fcdea";
   writeComment(e.target.form[0].value,USERID,index);
   e.target.form[0].value = "";  // input 창
-  console.log(e.target.value)
 }
 
 const writeComment = (comment, ID, index) => {
@@ -29,19 +51,17 @@ const writeComment = (comment, ID, index) => {
   const newCommentID = document.createElement("a");
   //ID
   newCommentID.href = "javascript:void(0)";
-  newCommentID.style.marginRight = "6px"
   newCommentID.textContent = ID;
   //comment
   newComment.textContent = comment;
+
   commentsWrapper[index]
-    .insertAdjacentElement('afterbegin', newCommentList)
+    .insertAdjacentElement('beforeend', newCommentList)
     .insertAdjacentElement('afterbegin', newCommentID)
     .insertAdjacentElement('afterend', newComment)
-
 }
 
-commentsForm.forEach((form, i) => {
-  
+commentsForm.forEach((form, i) => { 
   form.addEventListener("input",getComment);
   form[1].addEventListener("click",postComment);
 })

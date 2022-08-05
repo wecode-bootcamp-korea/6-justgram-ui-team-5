@@ -1,0 +1,12 @@
+{
+    "feeds" : [
+    {
+      "id" : 1,
+      "USER_ID" : "poy.lib",
+      "comment" : "첫 게시글 댓글!",
+      "feedPicture" : "/img/feedPic/feed1.jpg",
+      "WriterProfile" : "/img/feedPic/Profile.jpg",
+      "like" : 28
+    }
+  ]
+}
