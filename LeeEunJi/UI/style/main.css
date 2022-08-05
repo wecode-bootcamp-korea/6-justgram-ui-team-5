@@ -187,3 +187,8 @@ header {
 .comment-text {
   padding-left: 10px;
 }
+
+.comment-name {
+  margin-right: 10px;
+  font-weight: bold;
+}
