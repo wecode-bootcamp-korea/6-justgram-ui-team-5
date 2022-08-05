@@ -130,13 +130,23 @@
   flex-direction: column;
 }
 
-.commentsWrapper li a {
+.emptyHeart {
+  content: url(/img/icon/heart.png);
   margin-right: 5px;
+  float: right;
+  width: 15px;
 }
 
-.contentsBtn {
-  color: grey;
-  font-weight: lighter;
+.fullHeart {
+  content: url(/img/icon/fullheart.png);
+  margin-right: 5px;
+  float: right;
+  width: 15px;
+}
+
+.commentsWrapper li a {
+  margin-right: 5px;
+  
 }
 
 .writecomments {
@@ -150,4 +160,9 @@
 }
 .commentsBtn {
   color: #9fcdea;
+}
+
+.contentsBtn {
+  color: grey;
+  font-weight: lighter;
 }
