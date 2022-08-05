@@ -1,0 +1,18 @@
+[
+  {
+    "userName": "Alice",
+    "profileUrl": "https://images.unsplash.com/photo-1502323703385-c3ea9ace787d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+  },
+  {
+    "userName": "Elizabethe",
+    "profileUrl": "https://images.unsplash.com/photo-1659031605326-e0d90676abd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+  },
+  {
+    "userName": "Oscar",
+    "profileUrl": "https://images.unsplash.com/photo-1658985416866-d059ee62dafd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+  },
+  {
+    "userName": "Mark",
+    "profileUrl": "https://images.unsplash.com/photo-1658859094254-57c2ed9fc63b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+  }
+]
