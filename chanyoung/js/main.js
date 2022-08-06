@@ -7,7 +7,6 @@ const feedPicture = [...$("feedPicture")];
 const feedWriter = [...$("feedWriter")];
 const feedWriterProfile = [...$("feedWriterProfile")];
 const likeCount = [...$("likeCount")];
-let heartCheck = [...$("heartCheck")];
 const USERID = "댓글작성자"
 
 let feeds;
@@ -63,15 +62,24 @@ const writeComment = (comment, ID, index) => {
     .insertAdjacentElement('afterbegin', newCommentID)
     .insertAdjacentElement('afterend', newComment)
     .insertAdjacentElement('afterend', newCommentHeart)
-  
-  ///////////comment Like/////////////
-  heartCheck = [...$("heartCheck")];
 
+  ///////////comment Like/////////////
+  const heartCheck = [...$("heartCheck")];
+  heartCheck.forEach(v => {
+    v.addEventListener("click",changeHeart)})
+}
+const changeHeart = (e) => {
+  let target = e.target.classList;
+  if (target.contains("emptyHeart")) {
+    target.remove("emptyHeart")
+    target.add("fullHeart")
+  } else {
+    target.remove("fullHeart")
+    target.add("emptyHeart")
+  }
 }
 
-
-
-commentsForm.forEach((form, i) => { 
+commentsForm.forEach((form) => { 
   form.addEventListener("input",getComment);
   form[1].addEventListener("click", postComment);
 })

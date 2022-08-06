@@ -130,18 +130,18 @@
   flex-direction: column;
 }
 
-.emptyHeart {
-  content: url(/img/icon/heart.png);
+.heartCheck {
   margin-right: 5px;
   float: right;
   width: 15px;
 }
 
+.emptyHeart {
+  content: url(/img/icon/heart.png);
+}
+
 .fullHeart {
   content: url(/img/icon/fullheart.png);
-  margin-right: 5px;
-  float: right;
-  width: 15px;
 }
 
 .commentsWrapper li a {
