@@ -2,9 +2,31 @@
     "feeds" : [
     {
       "id" : 1,
-      "USER_ID" : "poy.lib",
-      "comment" : "첫 게시글 댓글!",
+      "feedID" : "poy.lib",
+      "feedText" : "노을 최고!",
+      "commentID" : "codejoa",
+      "commentText" : "최고 노을!",
       "feedPicture" : "/img/feedPic/feed1.jpg",
+      "WriterProfile" : "/img/feedPic/Profile.jpg",
+      "like" : 28
+    },
+    {
+      "id" : 1,
+      "feedID" : "poy.lib",
+      "feedText" : "바다 최고!",
+      "commentID" : "poy.code",
+      "commentText" : "최고 바다!",
+      "feedPicture" : "/img/feedPic/feed2.jpg",
+      "WriterProfile" : "/img/feedPic/Profile.jpg",
+      "like" : 28
+    },
+    {
+      "id" : 1,
+      "feedID" : "poy.lib",
+      "feedText" : "아크릴 최고!",
+      "commentID" : "just_poy",
+      "commentText" : "최고 아크릴!",
+      "feedPicture" : "/img/feedPic/feed3.jpg",
       "WriterProfile" : "/img/feedPic/Profile.jpg",
       "like" : 28
     }

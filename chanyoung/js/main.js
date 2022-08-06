@@ -8,20 +8,23 @@ const feedPicture = [...$("feedPicture")];
 const feedWriter = [...$("feedWriter")];
 const feedWriterProfile = [...$("feedWriterProfile")];
 const likeCount = [...$("likeCount")];
-const USERID = "댓글작성자"
-
+const contentsText = [...$("contentsText")];
+const contentsID = [...$("contentsID")];
+let USERID;
 let feeds;
 fetch("data/feed.json")
   .then((res) => res.json())
   .then((obj) => {
     feeds = obj.feeds;
     feeds.forEach((data,i) => {
-      loadCommentsID[i].textContent = data.USER_ID;
-      loadComments[i].textContent = data.comment;
+      loadCommentsID[i].textContent = data.commentID;
+      loadComments[i].textContent = data.commentText;
       feedPicture[i].src = data.feedPicture;
       feedWriterProfile[i].src = data.WriterProfile;
-      feedWriter[i].textContent = data.USER_ID;
+      feedWriter[i].textContent = data.feedID;
       likeCount[i].textContent = `좋아요 ${data.like} 개`;
+      contentsText[i].innerText = data.feedText;
+      USERID = data.commentID;
     })
   })
 
@@ -95,6 +98,7 @@ const changeHeart = (e) => {
   }
 }
 
+/////////////input commend//////////////
 commentsForm.forEach((form) => { 
   console.log(form[0].value)
   form.addEventListener("input",getComment);
