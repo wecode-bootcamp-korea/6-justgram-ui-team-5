@@ -1,6 +1,7 @@
 const $ = (v) => document.getElementsByClassName(v);
 const commentsForm = [...$("commentsForm")];  //[0:input 1:button]
 const commentsWrapper = [...$("commentsWrapper")];
+const commentsBtn = [...$("commentsBtn")];
 const loadCommentsID = [...$("loadCommentsID")];
 const loadComments = [...$("loadComments")];
 const feedPicture = [...$("feedPicture")];
@@ -49,25 +50,40 @@ const writeComment = (comment, ID, index) => {
   const newComment = document.createElement("span");
   const newCommentID = document.createElement("a");
   const newCommentHeart = document.createElement("img");
+  const newDeleteBtn = document.createElement("img");
   //ID
   newCommentID.href = "javascript:void(0)";
   newCommentID.textContent = ID;
   //comment
   newComment.textContent = comment;
-  // heart
+  // heart & deleteBtn
   newCommentHeart.classList.add("heartCheck", "emptyHeart");
+  newDeleteBtn.classList.add("deleteButton");
   // output
   commentsWrapper[index]
     .insertAdjacentElement('beforeend', newCommentList)
     .insertAdjacentElement('afterbegin', newCommentID)
     .insertAdjacentElement('afterend', newComment)
+    .insertAdjacentElement('afterend',newDeleteBtn)
     .insertAdjacentElement('afterend', newCommentHeart)
 
   ///////////comment Like/////////////
   const heartCheck = [...$("heartCheck")];
   heartCheck.forEach(v => {
-    v.addEventListener("click",changeHeart)})
+    v.addEventListener("click", changeHeart);
+  })
+
+  newDeleteBtn.addEventListener("click",deleteAlert)
 }
+
+//////////////////usedFunction////////////////////
+
+const deleteAlert = (e) => {
+  if (confirm("정말 삭제하시겠습니까?")) {
+    e.path[1].remove();
+  }
+}
+
 const changeHeart = (e) => {
   let target = e.target.classList;
   if (target.contains("emptyHeart")) {
@@ -80,6 +96,7 @@ const changeHeart = (e) => {
 }
 
 commentsForm.forEach((form) => { 
+  console.log(form[0].value)
   form.addEventListener("input",getComment);
   form[1].addEventListener("click", postComment);
 })

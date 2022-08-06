@@ -144,6 +144,12 @@
   content: url(/img/icon/fullheart.png);
 }
 
+.deleteButton {
+  content: url(/img/icon/cancel.png);
+  float: right;
+  width: 12px;
+}
+
 .commentsWrapper li a {
   margin-right: 5px;
   
