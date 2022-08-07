@@ -5,15 +5,48 @@ const commentWriteButton = document.getElementsByClassName(
   "comment-write-button"
 );
 const commentList = document.getElementsByClassName("feed-comment-list");
-
 const feedList = document.getElementsByClassName("feed-image-wrapper");
+const likeList = document.getElementsByClassName("feed-menu-like");
+
+// feeds IMG 동적 추가
+fetch("../data/feeds.json")
+  .then((res) => res.json())
+  .then((data) => {
+    // userID, feedIMG 가 담긴 객체를 요소로하는 배열
+    let feedArray = data.feeds;
+
+    feedArray.forEach((feed, index) => {
+      // img 태그 생성
+      const imgElem = document.createElement("img");
+      imgElem.className = "feed-image";
+      imgElem.src = feed.feedIMG;
+
+      // 적용
+      feedList[index].append(imgElem);
+    });
+  });
+
+// 좋아요 이벤트
+Array.from(likeList).forEach((likeIcon) => {
+  likeIcon.addEventListener("click", function (e) {
+    // 이미지 경로를 로컬경로(String)으로 선언, 할당
+    const findimgRoute = likeIcon.src.split("/");
+    const imgRoute = `./${findimgRoute[3]}/${findimgRoute[4]}`;
+
+    // 빈하트 >> 꽉찬하트
+    if (imgRoute === "./image/heart.png") {
+      likeIcon.src = "./image/red-heart.png";
+      // 꽉찬하트 >> 빈하트
+    } else if (imgRoute === "./image/red-heart.png") {
+      likeIcon.src = "./image/heart.png";
+    }
+  });
+});
 
 // 이미 존재하는 댓글 json에서 받아서 출력하기
 fetch("../data/comments.json")
   .then((res) => res.json())
   .then((data) => {
-    console.log(data);
-
     // userID, content가 들어있는 객체를 요소로 갖는 배열
     let commentArray = data.comments;
 
@@ -60,22 +93,3 @@ Array.from(commentWriteButton).forEach((button, index) => {
     commentList[index].appendChild(childElem);
   });
 });
-
-// feeds IMG 동적 추가
-fetch("../data/feeds.json")
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-    // userID, feedIMG 가 담긴 객체를 요소로하는 배열
-    let feedArray = data.feeds;
-
-    feedArray.forEach((feed, index) => {
-      // img 태그 생성
-      const imgElem = document.createElement("img");
-      imgElem.className = "feed-image";
-      imgElem.src = feed.feedIMG;
-
-      // 적용
-      feedList[index].append(imgElem);
-    });
-  });
