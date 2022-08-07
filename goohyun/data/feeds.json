@@ -1,0 +1,16 @@
+{
+  "feeds": [
+    {
+      "userID": "userID 1",
+      "feedIMG": "./image/cat.jpg"
+    },
+    {
+      "userID": "userID 2",
+      "feedIMG": "./image/airplane.png"
+    },
+    {
+      "userID": "userID 3",
+      "feedIMG": "./image/cat2.png"
+    }
+  ]
+}
