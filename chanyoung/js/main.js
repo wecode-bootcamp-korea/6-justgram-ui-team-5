@@ -10,7 +10,7 @@ const feedWriterProfile = [...$("feedWriterProfile")];
 const likeCount = [...$("likeCount")];
 const contentsText = [...$("contentsText")];
 const contentsID = [...$("contentsID")];
-let USERID;
+let USERID = "poypoy";
 let feeds;
 fetch("data/feed.json")
   .then((res) => res.json())
@@ -24,7 +24,6 @@ fetch("data/feed.json")
       feedWriter[i].textContent = data.feedID;
       likeCount[i].textContent = `좋아요 ${data.like} 개`;
       contentsText[i].innerText = data.feedText;
-      USERID = data.commentID;
     })
   })
 
@@ -46,6 +45,7 @@ const postComment = (e) => {
   e.target.form[1].style.color = "#9fcdea";
   writeComment(e.target.form[0].value,USERID,index);
   e.target.form[0].value = "";  // input 창
+  e.target.disabled = "true"
 }
 
 const writeComment = (comment, ID, index) => {
@@ -100,7 +100,6 @@ const changeHeart = (e) => {
 
 /////////////input commend//////////////
 commentsForm.forEach((form) => { 
-  console.log(form[0].value)
   form.addEventListener("input",getComment);
   form[1].addEventListener("click", postComment);
 })
