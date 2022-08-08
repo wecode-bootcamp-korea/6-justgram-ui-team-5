@@ -81,15 +81,33 @@ Array.from(commentWriteButton).forEach((button, index) => {
     const content = commentWriteInput[index].value;
 
     // userID와 content를 담는 div 만들기
-    const childElem = document.createElement("div");
+    const commentElem = document.createElement("div");
+    commentElem.className = "feed-write-comment vertical-center";
 
     // userID
     const nameSpan = document.createElement("span");
     nameSpan.className = "comment-user-ID";
     nameSpan.textContent = "현";
 
+    // 삭제 button 생성
+    const deleteButton = document.createElement("button");
+    deleteButton.style.marginLeft = "auto"; // 버튼 오른쪽 정렬
+    deleteButton.innerHTML = "삭제";
+
+    // 댓글 게시할 때 마다 삭제 버튼 선언
+    console.log(a);
+
     // html에 적용
-    childElem.append(nameSpan, content);
-    commentList[index].appendChild(childElem);
+    commentElem.append(nameSpan, content, deleteButton);
+    commentList[index].appendChild(commentElem);
+  });
+});
+
+// 댓글 삭제 이벤트
+const a = document.getElementsByClassName("feed-write-comment");
+Array.from(a).forEach((deleteBtn, index) => {
+  deleteBtn.addEventListener("click", function (e) {
+    deleteBtn.remove();
+    console.log(a);
   });
 });
