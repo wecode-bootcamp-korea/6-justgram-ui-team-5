@@ -1,0 +1,64 @@
+.login {
+  width: 400px;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+}
+
+.login__logo {
+  padding: 30px;
+}
+
+.login__form {
+}
+
+.login__content {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  margin: 0px 40px 10px;
+}
+
+.login__btn {
+  margin: 20px 40px 10px;
+}
+
+.login__input {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.login__input:focus {
+  outline: none;
+}
+
+.login__btn-disable {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-color: #b2dffc;
+  color: white;
+  padding: 15px;
+}
+
+.login__btn-enable {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-color: #0695f6;
+  color: white;
+  padding: 15px;
+}
+
+.login__find {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.login__find--pw {
+  color: #497095;
+}
