@@ -43,9 +43,11 @@ const feedTemplit = `
 fetch("./JSON/feeds.json")
   .then((res) => res.json())
   .then((data) => {
+    // 데이터의 갯수만큼 템플릿 그려내기
     for (let i = 0; i < data.length; i++) {
       $feed.insertAdjacentHTML("beforeend", feedTemplit);
     }
+    // 데이터를 템플릿에 채워넣기
     for (let i = 0; i < $card.length; i++) {
       $cardTopUsername[i].textContent = data[i].writer;
       $cardImgUrl[i].src = data[i].pictureUrl;
@@ -55,9 +57,8 @@ fetch("./JSON/feeds.json")
         $cardCommentUl[i].appendChild(listPaint);
       }
     }
-
-    // 폼의 갯수 = 피드의 갯수
-    for (let i = 0; i < $CommentForm.length; i++) {
+    // 댓글달기 기능
+    for (let i = 0; i < data.length; i++) {
       $CommentForm[i].addEventListener("submit", (e) => {
         e.preventDefault(); // submit 시에 새로고침을 막음
         const textcontents = $listInputArea[i].value;
@@ -66,7 +67,7 @@ fetch("./JSON/feeds.json")
         $cardCommentUl[i].insertAdjacentHTML("beforeend", templit);
         removeTextcontents();
       });
-      // 댓글이 submit 되면 작성자와 작성한 댓글을 지워준다
+      // 댓글이 submit 되면 작성자 항목과 댓글 항목을 지움
       function removeTextcontents() {
         $listInputArea[i].value = "";
         $userNameArea[i].value = "";
@@ -91,6 +92,7 @@ fetch("./JSON/feeds.json")
     }
   });
 
+  // 프로필 사진 변경
 fetch("./JSON/profile.json")
   .then((res) => res.json())
   .then((data) => {
