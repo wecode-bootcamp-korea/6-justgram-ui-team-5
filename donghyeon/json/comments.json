@@ -1,0 +1,19 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "userName": "김범수",
+      "content": "멋져요!"
+    },
+    {
+      "id": 2,
+      "userName": "나얼",
+      "content": "가보고 싶네요."
+    },
+    {
+      "id": 3,
+      "userName": "박효신",
+      "content": "여기 어딘가요?"
+    }
+  ]
+}
