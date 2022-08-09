@@ -16,6 +16,24 @@ const users = [
 
 // 회원가입 엔드포인트
 const createUser = (req, res) => {
+  /*
+  대체 가능 코드
+
+  // 클라이언트가 준 정보
+  const { id, name, email, password } = req.body.data;
+
+  // 회원 정보 배열에 클라이언트가 준 정보 추가
+  users.push({
+   id: id,
+   name: name,
+   email: email,
+   password: password,
+  });
+
+  이떄 객체 특성상 key, value의 이름이 같으면 생략이 가능해서
+  users.push({ id, name, email, password });
+  */
+
   // 클라이언트가 준 정보
   const user = req.body.data;
 

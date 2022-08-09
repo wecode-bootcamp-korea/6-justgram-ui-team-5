@@ -16,7 +16,7 @@ app.use(express.json());
 // app.method(endpoing url, handler function)
 // 클라이언트로부터 받은 회원정보를 "회원 정보 배열(user)" 에 추가
 app.post("/signup", createUser);
-app.post("/upload", createPost);
+app.post("/posts", createPost);
 
 // http.createServer(function)
 const server = http.createServer(app);
