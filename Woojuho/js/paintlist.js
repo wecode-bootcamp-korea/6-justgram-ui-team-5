@@ -92,7 +92,7 @@ fetch("./JSON/feeds.json")
     }
   });
 
-  // 프로필 사진 변경
+// 프로필 사진 변경
 fetch("./JSON/profile.json")
   .then((res) => res.json())
   .then((data) => {
