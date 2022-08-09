@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JUSTGRAM Main</title>
+    <!-- CSS 초기화 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
     <!-- 아이콘 -->
     <link
       href="img/instagram-title.png"
@@ -61,6 +66,7 @@
             <div class="user_id">JeongDongHyeon</div>
           </div>
           <div class="feed_picture"></div>
+
           <div class="menu_bar">
             <div class="menu_bar_icon">
               <img src="/img/heart.png" width="30px" height="30px" />
@@ -70,19 +76,66 @@
                 <img src="/img/bookmark-white.png" width="30px" height="30px" />
               </div>
             </div>
+
             <div class="like_content">
               <div class="like_profile"></div>
               <div class="like_check">JustCode님 외 10명이 좋아합니다.</div>
             </div>
+
             <div class="main_comment_box">
-              <div class="comment-box1" style="font-weight: 700">
-                anonymous1
-                <div class="comment">내용</div>
+              <div class="comment-box1" ></div>
+            </div>
+
+            <div class="function_tab">
+              <div class="ago_time">n분 전</div>
+              <div class="like_heart_btn">
+                <img
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                  width="15px"
+                  height="15px"
+                />
               </div>
-              <div class="comment-box1" style="font-weight: 700">
-                anonymous2
-                <div class="comment">내용</div>
+            </div>
+
+            <div class="comment_append_box">
+              <input
+                class="comment_content"
+                type="text"
+                placeholder="댓글 달기..."
+              />
+
+              <button class="comment_append"  type="submit">게시</button>
+            </div>
+          </div>
+          </div>
+
+
+          <div class="content">
+            <div class="feed_header">
+              <div class="profile_picture"></div>
+              <div class="user_id">JeongDongHyeon</div>
+            </div>
+            <div class="feed_picture"></div>
+  
+            <div class="menu_bar">
+              <div class="menu_bar_icon">
+                <img src="/img/heart.png" width="30px" height="30px" />
+                <img src="/img/comment.png" width="50px" height="50px" />
+                <img src="/img/upload.png" width="30px" height="30px" />
+                <div class="menu_bar_right">
+                  <img src="/img/bookmark-white.png" width="30px" height="30px" />
+                </div>
               </div>
+  
+              <div class="like_content">
+                <div class="like_profile"></div>
+                <div class="like_check">JustCode님 외 10명이 좋아합니다.</div>
+              </div>
+  
+              <div class="main_comment_box">
+                <div class="comment-box1" ></div>
+              </div>
+  
               <div class="function_tab">
                 <div class="ago_time">n분 전</div>
                 <div class="like_heart_btn">
@@ -93,18 +146,72 @@
                   />
                 </div>
               </div>
+  
+              <div class="comment_append_box">
+                <input
+                  class="comment_content"
+                  type="text"
+                  placeholder="댓글 달기..."
+                />
+  
+                <button class="comment_append"  type="submit">게시</button>
+              </div>
             </div>
-            <div class="comment_append_box">
-              <input
-                id="comment_content"
-                type="text"
-                placeholder="댓글 달기..."
-              />
-              <button id="comment_append" disabled type="submit">게시</button>
             </div>
-          </div>
-        </div>
-      </div>
+
+
+            <div class="content">
+              <div class="feed_header">
+                <div class="profile_picture"></div>
+                <div class="user_id">JeongDongHyeon</div>
+              </div>
+              <div class="feed_picture"></div>
+    
+              <div class="menu_bar">
+                <div class="menu_bar_icon">
+                  <img src="/img/heart.png" width="30px" height="30px" />
+                  <img src="/img/comment.png" width="50px" height="50px" />
+                  <img src="/img/upload.png" width="30px" height="30px" />
+                  <div class="menu_bar_right">
+                    <img src="/img/bookmark-white.png" width="30px" height="30px" />
+                  </div>
+                </div>
+    
+                <div class="like_content">
+                  <div class="like_profile"></div>
+                  <div class="like_check">JustCode님 외 10명이 좋아합니다.</div>
+                </div>
+    
+                <div class="main_comment_box">
+                  <div class="comment-box1" ></div>
+                </div>
+    
+                <div class="function_tab">
+                  <div class="ago_time">n분 전</div>
+                  <div class="like_heart_btn">
+                    <img
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                      width="15px"
+                      height="15px"
+                    />
+                  </div>
+                </div>
+    
+                <div class="comment_append_box">
+                  <input
+                    class="comment_content"
+                    type="text"
+                    placeholder="댓글 달기..."
+                  />
+    
+                  <button class="comment_append" type="submit">게시</button>
+                </div>
+              </div>
+              </div>
+
+
+        
+          
     </section>
   </body>
   <script src="js/main.js"></script>

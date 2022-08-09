@@ -6,7 +6,7 @@ function onIput() {
   const id = inputid.value;
   const pw = inputpw.value;
 
-  if (id.length > 1 && pw.length > 1) {
+  if (id.length > 0 && pw.length > 0) {
     loginbtn.style.backgroundColor = "#4ec5f4";
     loginbtn.style.cursor = "pointer";
     loginbtn.disabled = false;
