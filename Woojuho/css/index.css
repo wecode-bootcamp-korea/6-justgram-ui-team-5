@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 100vh;
+  font-family: "Lobster", cursive;
+}
+
+#loginContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(219, 219, 219);
+  text-decoration: none solid rgb(38, 38, 38);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#loginContainer img:first-child {
+  width: 175px;
+  margin-top: 24px;
+}
+
+#userInfoForm {
+  margin-top: 24px;
+}
+
+#loginContainer input {
+  height: 30px;
+  width: 250px;
+  padding: 9px 0px 7px 8px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  margin-bottom: 5px;
+  background-color: #fafafa;
+  background-position: 0% 0%;
+  color: #262626;
+}
+
+.loginButton {
+  width: 260px;
+  height: 30px;
+  margin: 8px 40px;
+  border: 0px solid #ffffff;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #b2dffc;
+}
+
+.active {
+  background-color: #0095f6;
+  cursor: pointer;
+}
+
+#loginContainer a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(0, 55, 107);
+}
+
+#loginContainer #userInfoForm a > img {
+  display: inline-block;
+  margin-bottom: 24px;
+  text-align: center;
+}
