@@ -1,0 +1,22 @@
+.common__arragement--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.logo-text {
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  color: #000000;
+}
+
+.icon-image {
+  width: 32px;
+  height: 32px;
+}
