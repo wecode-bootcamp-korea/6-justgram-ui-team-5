@@ -1,0 +1,75 @@
+.login {
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  width: 400px;
+  height: 430px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "fonts";
+  src: url("../../fonts/lobster-regular.woff");
+}
+
+.fonts {
+  margin-top: 15px;
+  font-family: "fonts";
+  font-size: 45px;
+  height: 88px;
+}
+
+.form {
+  height: 35px;
+  padding: 5px 8px;
+}
+
+.form-design {
+  width: 300px;
+  height: 35px;
+  padding-left: 10px;
+  font-family: initial;
+  font-size: 12px;
+  outline: none;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid lightgrey;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+input::placeholder {
+  color: rgb(160, 160, 160);
+}
+
+#login {
+  margin-top: 14px;
+  width: 316px;
+  height: 32px;
+  background-color: rgb(190, 220, 248);
+  color: white;
+  border: white;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px;
+  font-family: initial;
+}
+
+#password {
+  margin-top: 150px;
+  color: rgb(11, 88, 160);
+  border: white;
+  background-color: white;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: initial;
+}
+
+button[disabled] {
+  cursor: default;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "comments": [
+    {
+      "feedNum": 0,
+      "userName": "Choo",
+      "comment": "안녕! 귀여워!!!"
+    },
+    {
+      "feedNum": 1,
+      "userName": "Lee",
+      "comment": "너무 귀여워..."
+    },
+    {
+      "feedNum": 1,
+      "userName": "Park",
+      "comment": "진짜 너무 귀여운데?"
+    },
+    {
+      "feedNum": 2,
+      "userName": "Kim",
+      "comment": ":3c 귀여워용"
+    },
+    {
+      "feedNum": 0,
+      "userName": "Hong",
+      "comment": "인생..나만없어 고양이...."
+    },
+    {
+      "feedNum": 2,
+      "userName": "Choi",
+      "comment": "야옹야옹"
+    },
+    {
+      "feedNum": 1,
+      "userName": "Lee",
+      "comment": "휴...너무 귀여워"
+    }
+  ]
+}

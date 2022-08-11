@@ -1,0 +1,194 @@
+/* 로그인UI */
+@font-face {
+  font-family: "fonts";
+  src: url("../../Fonts/Lobster-Regular.woff");
+}
+
+header {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  justify-content: space-around;
+  left: -200px;
+  margin-top: 15px;
+}
+
+.left-meun {
+  width: 233px;
+  text-align: left;
+}
+.Jg-logo {
+  font-size: 40px;
+  font-family: "fonts";
+  position: absolute;
+}
+
+.main-logo {
+  height: 34px;
+  margin-top: 9px;
+}
+
+.main-line {
+  height: 40px;
+  margin-top: 9px;
+}
+
+.center-menu {
+  position: relative;
+  width: 270px;
+  height: 85px;
+}
+
+.search-bar {
+  margin-top: 10px;
+  width: 100%;
+  height: 40%;
+  font-size: 17px;
+  position: absolute;
+  background-image: url(../img/search.png);
+  background-color: rgb(247, 247, 247);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 40% 50%;
+  border-radius: 1px;
+  border: solid 1.5px rgb(216, 216, 216);
+  text-align: center;
+  overflow: auto;
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(148, 147, 147);
+}
+
+.mg-r20 {
+  margin-right: 20px;
+}
+
+#heart {
+  height: 49px;
+}
+
+/* main의 feed UI*/
+.main-feed {
+  border: solid 1px rgb(216, 216, 216);
+  border-radius: 1px;
+  display: inline-block;
+  margin-left: 580px;
+  width: 833px;
+  margin-top: 30px;
+}
+
+.feed-header {
+  margin: 15px;
+}
+
+.profile {
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+#id {
+  margin: 9px;
+  font-size: 19px;
+}
+
+.meun-dots {
+  height: 20px;
+  vertical-align: middle;
+  float: right;
+  margin: 10px;
+}
+
+.feed-photo {
+  height: 750px;
+}
+
+.cat-photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*menu bar*/
+.menu-bar {
+  margin-top: 15px;
+}
+
+.bar-icon {
+  height: 35px;
+  vertical-align: top;
+  margin-right: 9px;
+  margin-left: 8px;
+}
+
+.heart {
+  height: 33px;
+  margin-top: -1px;
+}
+
+.chat-icon {
+  height: 39px;
+  margin-top: -5px;
+}
+
+.up-icon {
+  height: 30px;
+  margin-top: 1px;
+}
+
+.mark-icon {
+  float: right;
+}
+
+/* feed-content*/
+.feed-content {
+  margin-top: 20px;
+  padding-left: 13px;
+  padding-bottom: 10px;
+}
+
+.feed-time {
+  font-size: 15px;
+  color: rgb(197, 197, 197);
+  padding-left: 10px;
+}
+
+.comment {
+  width: 821px;
+  height: 60px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 1px;
+  outline: none;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-left: -1px;
+}
+
+.comment-box {
+  position: relative;
+  padding: 0px;
+}
+
+.comment-button {
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  color: skyblue;
+  cursor: pointer;
+}
+
+.comment-text {
+  padding-left: 10px;
+}
+
+.comment-name {
+  margin-right: 10px;
+  font-weight: bold;
+}
