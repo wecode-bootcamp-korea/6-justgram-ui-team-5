@@ -1,0 +1,28 @@
+{
+  "feeds": [
+    {
+      "id": 1,
+      "username": "Choo",
+      "profileImg": "../UI/img/profile1.jpg",
+      "contentImg": "../UI/img/cat.jpg",
+      "content": "우리 야옹이 너무 귀엽죠!",
+      "timeStamp": "42분 전"
+    },
+    {
+      "id": 2,
+      "username": "Park",
+      "profileImg": "../UI/img/profileMococo.jpg",
+      "contentImg": "../UI/img/feedCake.jpg",
+      "content": "카페 놀러왔어요!",
+      "timeStamp": "30초 전"
+    },
+    {
+      "id": 3,
+      "username": "Kim",
+      "profileImg": "../UI/img/profileStreet.jpg",
+      "contentImg": "../UI/img/feedMulgalbi.jpg",
+      "content": "마이쪙",
+      "timeStamp": "10분 전"
+    }
+  ]
+}

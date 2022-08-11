@@ -63,6 +63,12 @@ comment.forEach((input, index) => {
   });
 });
 
+fetch("http://localhost:8000/feeds", {
+  method: "GET",
+})
+  .then((res) => res.json())
+  .then((feedsdata) => console.log(feedsdata));
+
 //  클릭,keyup 이벤트리스너
 // for (var i = 0; i < addButton.length; i++) {
 //   addButton[i].addEventListener("click", function () {
